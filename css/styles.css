@@ -1,7 +1,8 @@
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #0a0614;
+    color: #3e384e;
     background-color: #d8dcf5;
     margin: 0;
     padding: 0;
@@ -9,8 +10,8 @@ body {
 
 header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #1b2833;
-    color: #5a6d85;
+    background-color: #243041;
+    color: #a6d0ec;
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -35,6 +36,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -42,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #261d42;
+    color: #2c1f53;
     text-decoration: none;
     font-weight: bold;
 }
@@ -60,7 +62,7 @@ nav ul li a:hover {
 
 h2 {
     margin: 20px 0;
-    color: #333;
+    color: #000000;
     font-size: 2rem;
 }
 
@@ -70,14 +72,14 @@ ul {
 }
 
 ul li {
-    background: #658fa1;
+    background: #bdbbbb;
     margin: 10px 0;
     padding: 10px;
     border-left: 5px solid #333;
 }
 
 .project {
-    background: #a3afba;
+    background: #c2c4c6;
     padding: 20px;
     margin: 10px 0;
     border-left: 5px solid #333;
@@ -101,4 +103,75 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        margin: 0 auto 10px auto;
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .project img {
+        width: 80px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
